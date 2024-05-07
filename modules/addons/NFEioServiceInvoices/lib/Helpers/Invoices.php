@@ -38,11 +38,11 @@ class Invoices
         }
 
         if ($invoiceUrl) {
-            $description = $description . "\n" . self::getInvoiceViewUrl($invoiceId);
+            $description = $description . "\n" . self::getInvoiceViewUrl($invoiceId)."\n";
         }
 
         if ($additionalDescription) {
-            $description = $description . "\n" . $additionalDescription;
+            $description = $description . "\n" . $additionalDescription."\n";
         }
 
         return $description;
